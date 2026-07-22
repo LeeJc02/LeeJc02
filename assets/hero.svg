@@ -1,90 +1,139 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">LeeJc02 profile banner</title>
-  <desc id="desc">A deep-space developer banner with animated orbital paths and system status details.</desc>
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LeeJc02 developer profile command center</title>
+  <desc id="desc">A minimal animated systems dashboard for a developer building reliable software, agents, and products.</desc>
+  <style>
+    .grid-flow { animation: gridFlow 16s linear infinite; }
+    .scan { animation: scan 7s ease-in-out infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .dash { animation: dash 7s linear infinite; }
+    .cursor { animation: blink 1.1s steps(1) infinite; }
+    .bar-a { animation: bars 3.2s ease-in-out infinite alternate; transform-origin: bottom; transform-box: fill-box; }
+    .bar-b { animation: bars 4.1s .4s ease-in-out infinite alternate; transform-origin: bottom; transform-box: fill-box; }
+    .bar-c { animation: bars 3.6s .8s ease-in-out infinite alternate; transform-origin: bottom; transform-box: fill-box; }
+    @keyframes gridFlow { to { transform: translateX(36px); } }
+    @keyframes scan { 0%, 100% { transform: translateY(-10px); opacity: 0; } 20%, 80% { opacity: .32; } 50% { transform: translateY(390px); opacity: .16; } }
+    @keyframes pulse { 0%, 100% { opacity: .42; transform: scale(.82); } 50% { opacity: 1; transform: scale(1); } }
+    @keyframes dash { to { stroke-dashoffset: -120; } }
+    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+    @keyframes bars { from { transform: scaleY(.46); opacity: .48; } to { transform: scaleY(1); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .grid-flow, .scan, .pulse, .dash, .cursor, .bar-a, .bar-b, .bar-c { animation: none; }
+      .scan { display: none; }
+    }
+  </style>
+
   <defs>
-    <linearGradient id="bg" x1="60" y1="20" x2="1130" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#08111F"/>
-      <stop offset="0.52" stop-color="#0D1117"/>
-      <stop offset="1" stop-color="#130B2B"/>
+    <linearGradient id="background" x1="30" y1="20" x2="1160" y2="405" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06131E"/>
+      <stop offset="0.5" stop-color="#090E17"/>
+      <stop offset="1" stop-color="#130B24"/>
     </linearGradient>
-    <linearGradient id="accent" x1="380" y1="0" x2="815" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22D3EE"/>
-      <stop offset="0.5" stop-color="#38BDF8"/>
+    <linearGradient id="accent" x1="52" y1="0" x2="690" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="0.48" stop-color="#38BDF8"/>
       <stop offset="1" stop-color="#A78BFA"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(881 178) rotate(90) scale(154 276)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7C3AED" stop-opacity="0.2"/>
+    <linearGradient id="line" x1="720" y1="0" x2="1125" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(948 198) rotate(90) scale(250 325)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
-    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
-    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3" result="blurred"/>
-      <feMerge><feMergeNode in="blurred"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" stroke="#38BDF8" stroke-opacity="0.055"/>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#38BDF8" stroke-opacity="0.055"/>
     </pattern>
-    <clipPath id="frame"><rect width="1200" height="360" rx="24"/></clipPath>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="420" rx="24"/></clipPath>
   </defs>
 
   <g clip-path="url(#frame)">
-    <rect width="1200" height="360" fill="url(#bg)"/>
-    <rect width="1200" height="360" fill="url(#grid)"/>
-    <ellipse cx="881" cy="178" rx="276" ry="154" fill="url(#glow)"/>
-    <circle cx="1040" cy="50" r="86" fill="#0EA5E9" fill-opacity="0.08" filter="url(#blur)"/>
-    <circle cx="115" cy="330" r="115" fill="#7C3AED" fill-opacity="0.09" filter="url(#blur)"/>
+    <rect width="1200" height="420" fill="url(#background)"/>
+    <rect class="grid-flow" x="-36" width="1236" height="420" fill="url(#grid)"/>
+    <ellipse cx="948" cy="198" rx="325" ry="250" fill="url(#glow)"/>
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="url(#line)"/>
 
-    <g opacity="0.85">
-      <circle cx="870" cy="178" r="48" stroke="#38BDF8" stroke-opacity="0.28"/>
-      <circle cx="870" cy="178" r="94" stroke="#A78BFA" stroke-opacity="0.18" stroke-dasharray="5 8"/>
-      <ellipse cx="870" cy="178" rx="162" ry="70" transform="rotate(-16 870 178)" stroke="#38BDF8" stroke-opacity="0.35" stroke-dasharray="4 7"/>
-      <ellipse cx="870" cy="178" rx="217" ry="98" transform="rotate(20 870 178)" stroke="#A78BFA" stroke-opacity="0.18"/>
-      <circle cx="870" cy="178" r="17" fill="#38BDF8" fill-opacity="0.16" stroke="#67E8F9" filter="url(#softGlow)"/>
-      <circle cx="870" cy="178" r="5" fill="#E0F2FE"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+      <g font-size="12" letter-spacing="2">
+        <circle class="pulse" cx="54" cy="52" r="5" fill="#22C55E" filter="url(#softGlow)"/>
+        <text x="70" y="57" fill="#86EFAC">ONLINE</text>
+        <text x="151" y="57" fill="#334155">/</text>
+        <text x="170" y="57" fill="#64748B">PROFILE.OS</text>
+        <text x="1128" y="57" text-anchor="end" fill="#475569">CN · UTC+8</text>
+      </g>
 
-      <circle r="5" fill="#67E8F9" filter="url(#softGlow)">
-        <animateMotion dur="7s" repeatCount="indefinite" path="M708 178a162 70 -16 1 0 324 0a162 70 -16 1 0 -324 0"/>
-      </circle>
-      <circle r="4" fill="#C4B5FD" filter="url(#softGlow)">
-        <animateMotion dur="11s" repeatCount="indefinite" path="M653 178a217 98 20 1 1 434 0a217 98 20 1 1 -434 0"/>
-      </circle>
+      <text x="48" y="151" fill="#64748B" font-size="13" letter-spacing="4">ENGINEERING SIGNAL / 02</text>
+      <text x="45" y="232" fill="url(#accent)" font-size="76" font-weight="750" letter-spacing="-5">LEE / JC02</text>
+      <rect class="cursor" x="483" y="175" width="12" height="61" rx="2" fill="#67E8F9" opacity="0.85"/>
+      <text x="51" y="276" fill="#CBD5E1" font-size="18" letter-spacing="1.4">SYSTEMS · AGENTS · PRODUCTS</text>
+      <text x="51" y="310" fill="#64748B" font-size="13">turning prototypes into production-shaped software</text>
+
+      <g transform="translate(50 348)">
+        <rect width="610" height="1" fill="url(#accent)" opacity="0.45"/>
+        <text y="31" fill="#64748B" font-size="11" letter-spacing="1.3">GO</text>
+        <text x="43" y="31" fill="#334155">/</text>
+        <text x="62" y="31" fill="#64748B" font-size="11" letter-spacing="1.3">TYPESCRIPT</text>
+        <text x="168" y="31" fill="#334155">/</text>
+        <text x="187" y="31" fill="#64748B" font-size="11" letter-spacing="1.3">PYTHON</text>
+        <text x="264" y="31" fill="#334155">/</text>
+        <text x="283" y="31" fill="#64748B" font-size="11" letter-spacing="1.3">C++</text>
+        <text x="333" y="31" fill="#334155">/</text>
+        <text x="352" y="31" fill="#A78BFA" font-size="11" letter-spacing="1.3">SHIP WITH PROOF</text>
+      </g>
+
+      <g transform="translate(714 84)">
+        <rect width="438" height="272" rx="18" fill="#0B1220" fill-opacity="0.74" stroke="#38BDF8" stroke-opacity="0.18"/>
+        <path d="M0 48H438" stroke="#1E293B"/>
+        <circle cx="24" cy="24" r="4" fill="#FB7185" fill-opacity="0.7"/>
+        <circle cx="40" cy="24" r="4" fill="#FBBF24" fill-opacity="0.7"/>
+        <circle cx="56" cy="24" r="4" fill="#4ADE80" fill-opacity="0.7"/>
+        <text x="414" y="29" text-anchor="end" fill="#475569" font-size="10" letter-spacing="1.4">RUNTIME / ACTIVE</text>
+
+        <g transform="translate(24 76)" font-size="11">
+          <text fill="#38BDF8" letter-spacing="1.6">01</text>
+          <text x="39" fill="#E2E8F0" font-size="13">MEDORBIT</text>
+          <text x="366" text-anchor="end" fill="#64748B">AGENT</text>
+          <path class="dash" d="M0 20H390" stroke="#38BDF8" stroke-opacity="0.34" stroke-dasharray="3 8"/>
+        </g>
+        <g transform="translate(24 128)" font-size="11">
+          <text fill="#A78BFA" letter-spacing="1.6">02</text>
+          <text x="39" fill="#E2E8F0" font-size="13">WEHI</text>
+          <text x="366" text-anchor="end" fill="#64748B">REALTIME</text>
+          <path class="dash" d="M0 20H390" stroke="#A78BFA" stroke-opacity="0.3" stroke-dasharray="3 8"/>
+        </g>
+        <g transform="translate(24 180)" font-size="11">
+          <text fill="#67E8F9" letter-spacing="1.6">03</text>
+          <text x="39" fill="#E2E8F0" font-size="13">OPEN SOURCE</text>
+          <text x="366" text-anchor="end" fill="#64748B">LEARNING</text>
+          <path class="dash" d="M0 20H390" stroke="#67E8F9" stroke-opacity="0.26" stroke-dasharray="3 8"/>
+        </g>
+
+        <g transform="translate(25 227)">
+          <text y="27" fill="#475569" font-size="9" letter-spacing="1.2">BUILD VELOCITY</text>
+          <rect class="bar-a" x="112" y="3" width="7" height="24" rx="2" fill="#1D4ED8"/>
+          <rect class="bar-b" x="126" y="8" width="7" height="19" rx="2" fill="#2563EB"/>
+          <rect class="bar-c" x="140" y="0" width="7" height="27" rx="2" fill="#0EA5E9"/>
+          <rect class="bar-a" x="154" y="11" width="7" height="16" rx="2" fill="#38BDF8"/>
+          <rect class="bar-b" x="168" y="5" width="7" height="22" rx="2" fill="#67E8F9"/>
+          <path d="M198 15H368" stroke="#1E293B"/>
+          <circle class="pulse" cx="368" cy="15" r="4" fill="#A78BFA" filter="url(#softGlow)"/>
+          <text x="390" y="19" text-anchor="end" fill="#A78BFA" font-size="9">ITERATING</text>
+        </g>
+      </g>
     </g>
 
     <g fill="#E0F2FE">
-      <circle cx="705" cy="65" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
-      <circle cx="1120" cy="125" r="1"><animate attributeName="opacity" values="1;0.15;1" dur="4.5s" repeatCount="indefinite"/></circle>
-      <circle cx="1030" cy="295" r="1.3"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.8s" repeatCount="indefinite"/></circle>
-      <circle cx="620" cy="278" r="1"><animate attributeName="opacity" values="0.25;1;0.25" dur="5s" repeatCount="indefinite"/></circle>
-      <circle cx="960" cy="42" r="1"/>
-      <circle cx="1150" cy="250" r="1"/>
-      <circle cx="760" cy="315" r="1"/>
-    </g>
-
-    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
-      <text x="70" y="74" fill="#38BDF8" font-size="14" letter-spacing="3">SYSTEM / ONLINE</text>
-      <circle cx="49" cy="69" r="5" fill="#22C55E" filter="url(#softGlow)">
-        <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <text x="48" y="164" fill="url(#accent)" font-size="72" font-weight="700" letter-spacing="-3">LeeJc02</text>
-      <text x="52" y="207" fill="#C9D1D9" font-size="18" letter-spacing="1.5">BUILDING RELIABLE SYSTEMS</text>
-      <text x="52" y="239" fill="#64748B" font-size="14">from idea → architecture → production</text>
-
-      <rect x="50" y="279" width="440" height="1" fill="url(#accent)" opacity="0.55"/>
-      <text x="51" y="310" fill="#64748B" font-size="12" letter-spacing="1">GO</text>
-      <text x="105" y="310" fill="#334155" font-size="12">/</text>
-      <text x="127" y="310" fill="#64748B" font-size="12" letter-spacing="1">TYPESCRIPT</text>
-      <text x="238" y="310" fill="#334155" font-size="12">/</text>
-      <text x="260" y="310" fill="#64748B" font-size="12" letter-spacing="1">PYTHON</text>
-      <text x="340" y="310" fill="#334155" font-size="12">/</text>
-      <text x="362" y="310" fill="#64748B" font-size="12" letter-spacing="1">C++</text>
-    </g>
-
-    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11">
-      <text x="1030" y="321" fill="#475569">ORBIT 02</text>
-      <path d="M1030 329h93" stroke="#334155"/>
+      <circle class="pulse" cx="674" cy="102" r="1.4"/>
+      <circle class="pulse" cx="679" cy="331" r="1.2" style="animation-delay:.7s"/>
+      <circle class="pulse" cx="1169" cy="79" r="1.3" style="animation-delay:1.1s"/>
+      <circle cx="1094" cy="382" r="1" opacity="0.65"/>
+      <circle cx="697" cy="391" r="1" opacity="0.45"/>
     </g>
   </g>
-  <rect x="0.5" y="0.5" width="1199" height="359" rx="23.5" stroke="#38BDF8" stroke-opacity="0.18"/>
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="23.5" stroke="#38BDF8" stroke-opacity="0.2"/>
 </svg>
