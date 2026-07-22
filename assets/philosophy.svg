@@ -1,0 +1,58 @@
+<svg width="1000" height="270" viewBox="0 0 1000 270" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Useful. Clear. Built to last.</title>
+  <desc id="desc">Three shapes slowly organize into a durable structure, representing the practice of making complex systems simple.</desc>
+  <style>
+    :root {
+      --background: #F5F5F7;
+      --primary: #1D1D1F;
+      --secondary: #66666D;
+      --border: #D8D8DC;
+      --guide: #BCBCC2;
+    }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif; }
+    .shape { transform-box: fill-box; transform-origin: center; animation: organize 8s cubic-bezier(.4, 0, .2, 1) infinite alternate; }
+    .circle { --from: translate(-42px, 22px) rotate(-9deg); }
+    .square { --from: translate(18px, -27px) rotate(14deg); }
+    .pill { --from: translate(47px, 28px) rotate(-12deg); }
+    @keyframes organize {
+      0%, 18% { transform: var(--from); }
+      82%, 100% { transform: translate(0, 0) rotate(0); }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0C0C0D;
+        --primary: #F5F5F7;
+        --secondary: #A6A6AD;
+        --border: #353538;
+        --guide: #4B4B50;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .shape { animation: none; transform: none; }
+    }
+  </style>
+  <rect width="1000" height="270" rx="30" fill="var(--background)"/>
+  <rect x=".75" y=".75" width="998.5" height="268.5" rx="29.25" stroke="var(--border)" stroke-width="1.5"/>
+
+  <g transform="translate(56 67)">
+    <text fill="var(--primary)" font-size="50" font-weight="720" letter-spacing="-1.8">Useful. Clear. Built to last.</text>
+    <text y="55" fill="var(--secondary)" font-size="29" font-weight="450">Complex systems should feel simple.</text>
+    <text y="101" fill="var(--secondary)" font-size="28" font-weight="500">我想把复杂的事，做得简单而可靠。</text>
+  </g>
+
+  <g aria-hidden="true">
+    <path d="M715 89H926M715 181H926" stroke="var(--guide)" stroke-width="1.5" stroke-dasharray="3 7"/>
+    <g class="shape circle">
+      <circle cx="754" cy="135" r="39" fill="#4285F4"/>
+      <circle cx="739" cy="120" r="11" fill="#FFFFFF" fill-opacity=".22"/>
+    </g>
+    <g class="shape square">
+      <rect x="779" y="96" width="78" height="78" rx="24" fill="#EA4335"/>
+      <path d="M798 135H838" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g class="shape pill">
+      <rect x="872" y="96" width="54" height="78" rx="27" fill="#FBBC05"/>
+      <circle cx="899" cy="123" r="8" fill="#34A853"/>
+    </g>
+  </g>
+</svg>

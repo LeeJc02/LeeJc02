@@ -1,0 +1,72 @@
+<svg width="1000" height="330" viewBox="0 0 1000 330" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">WeHi</title>
+  <desc id="desc">Realtime messaging with thoughtful distribution, multi-device synchronization, and containerized delivery.</desc>
+  <style>
+    :root {
+      --background: #FFF7EC;
+      --surface: #FFFFFF;
+      --primary: #34220F;
+      --secondary: #765B3D;
+      --border: #E7D2B7;
+      --line: #B99975;
+      --tag: #F8E8D3;
+      --tag-text: #684A2B;
+    }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #171008;
+        --surface: #261B10;
+        --primary: #FFF9F0;
+        --secondary: #D8BE9D;
+        --border: #4D3923;
+        --line: #866A49;
+        --tag: #3B2A17;
+        --tag-text: #F1D5B2;
+      }
+    }
+  </style>
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1000" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--surface)" stop-opacity=".92"/>
+      <stop offset="1" stop-color="var(--background)"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="702" y1="77" x2="902" y2="253" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA4335"/>
+      <stop offset=".5" stop-color="#FBBC05"/>
+      <stop offset="1" stop-color="#4285F4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="330" rx="30" fill="url(#wash)"/>
+  <rect x=".75" y=".75" width="998.5" height="328.5" rx="29.25" stroke="var(--border)" stroke-width="1.5"/>
+
+  <g transform="translate(52 49)">
+    <text fill="var(--secondary)" font-size="21" font-weight="650" letter-spacing="2.5">02 / REALTIME SYSTEMS</text>
+    <text y="74" fill="var(--primary)" font-size="59" font-weight="720" letter-spacing="-2">WeHi</text>
+    <text y="122" fill="var(--primary)" font-size="31" font-weight="550" letter-spacing="-.55">Realtime messaging, thoughtfully distributed.</text>
+    <text y="165" fill="var(--secondary)" font-size="28" font-weight="450">Fast conversations, resilient services, and consistent</text>
+    <text y="197" fill="var(--secondary)" font-size="28" font-weight="450">state across devices.</text>
+    <g transform="translate(0 215)" font-size="22" font-weight="650" text-anchor="middle">
+      <rect width="100" height="34" rx="17" fill="var(--tag)"/><text x="50" y="22" fill="var(--tag-text)">Realtime</text>
+      <rect x="109" width="92" height="34" rx="17" fill="var(--tag)"/><text x="155" y="22" fill="var(--tag-text)">Sync</text>
+      <rect x="210" width="128" height="34" rx="17" fill="var(--tag)"/><text x="274" y="22" fill="var(--tag-text)">Containers</text>
+    </g>
+  </g>
+
+  <g aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M707 105L802 67L897 105M707 105V211L802 259M897 105V211L802 259M707 211L897 105M707 105L897 211" stroke="var(--line)" stroke-width="2" stroke-dasharray="5 8"/>
+    <path d="M802 67V259" stroke="url(#beam)" stroke-width="5" opacity=".72"/>
+    <g fill="var(--surface)" stroke-width="6">
+      <rect x="681" y="79" width="52" height="52" rx="17" stroke="#EA4335"/>
+      <rect x="776" y="41" width="52" height="52" rx="17" stroke="#FBBC05"/>
+      <rect x="871" y="79" width="52" height="52" rx="17" stroke="#4285F4"/>
+      <rect x="681" y="185" width="52" height="52" rx="17" stroke="#34A853"/>
+      <rect x="871" y="185" width="52" height="52" rx="17" stroke="#EA4335"/>
+      <rect x="776" y="233" width="52" height="52" rx="17" stroke="#4285F4"/>
+    </g>
+    <g fill="var(--primary)">
+      <circle cx="707" cy="105" r="5"/><circle cx="802" cy="67" r="5"/><circle cx="897" cy="105" r="5"/>
+      <circle cx="707" cy="211" r="5"/><circle cx="897" cy="211" r="5"/><circle cx="802" cy="259" r="5"/>
+    </g>
+  </g>
+</svg>
