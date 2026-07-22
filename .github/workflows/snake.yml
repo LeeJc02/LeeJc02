@@ -36,7 +36,7 @@ jobs:
         run: python3 scripts/generate_telemetry.py
 
       - name: Stage telemetry assets
-        run: cp profile-3d-contrib/profile-night-rainbow.svg dist/profile-3d-contrib.svg
+        run: cp profile-3d-contrib/profile-night-view.svg dist/profile-3d-contrib.svg
 
       - name: Publish telemetry
         uses: crazy-max/ghaction-github-pages@v4
