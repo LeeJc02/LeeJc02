@@ -1,31 +1,31 @@
-<div align="center">
-  <img src="./assets/hero.svg" width="100%" alt="LeeJc02 - software builder exploring agents, distributed systems, and the modern web" />
-</div>
+# Lee
 
-<p align="center">
-  <a href="https://leejc02.github.io/"><b>Portfolio &nearr;</b></a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/LeeJc02"><b>GitHub &nearr;</b></a>
-</p>
+Computer science student and open-source builder. I work across agent systems, distributed services, and the web, with a preference for small boundaries, observable behavior, and software that can explain itself.
 
-## Selected Work
+我喜欢把复杂的系统拆开，再把它们做得简单、可靠、可验证。
 
-<a href="https://github.com/LeeJc02/MedOrbit">
-  <img src="./assets/medorbit.svg" width="100%" alt="MedOrbit - evidence-first medication safety built with Go, Python, and gRPC" />
-</a>
+[portfolio](https://leejc02.github.io/) &nbsp;·&nbsp; [all repositories](https://github.com/LeeJc02?tab=repositories)
 
-<a href="https://github.com/LeeJc02/WeHi">
-  <img src="./assets/wehi.svg" width="100%" alt="WeHi - thoughtfully distributed realtime messaging with multi-device sync and containerized delivery" />
-</a>
+## Selected work
 
-## A Way of Building
+### [MedOrbit](https://github.com/LeeJc02/MedOrbit)
 
-<div align="center">
-  <img src="./assets/philosophy.svg" width="100%" alt="Useful. Clear. Built to last. Turning complex systems into simple, durable software." />
-</div>
+A medication-safety workflow with a Go gateway and Python gRPC runtime. It includes evidence enforcement, tenant-scoped audit replay, offline and Docker-backed evaluations, and a release path through GHCR.
+
+`Go` `Python` `gRPC` `Postgres`
+
+### [WeHi](https://github.com/LeeJc02/WeHi)
+
+A distributed messaging system with a Next.js client and focused Go services for authentication, business APIs, and realtime delivery. Reconnects use an incremental event log rather than best-effort delivery alone.
+
+`Go` `TypeScript` `Next.js` `WebSocket` `MySQL` `Redis`
+
+## Notes
+
+Right now I am exploring how agent evaluation, distributed state, and frontend architecture can remain understandable as systems grow.
 
 <details>
-  <summary><b>Open the playground</b></summary>
+  <summary>Contribution trail</summary>
   <br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeeJc02/LeeJc02/output/github-contribution-grid-snake-dark.svg" />
@@ -33,12 +33,3 @@
     <img width="100%" alt="GitHub contribution snake" src="https://raw.githubusercontent.com/LeeJc02/LeeJc02/output/github-contribution-grid-snake.svg" />
   </picture>
 </details>
-
----
-
-<p align="center">
-  Designed in code. Built with curiosity.<br />
-  <a href="https://leejc02.github.io/">Portfolio</a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://github.com/LeeJc02?tab=repositories">All repositories</a>
-</p>
