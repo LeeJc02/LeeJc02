@@ -9,6 +9,10 @@
 </p>
 
 <p align="center">
+  <a href="https://leejc02.github.io"><b>ENTER INTERACTIVE PORTFOLIO →</b></a>
+</p>
+
+<p align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1000&color=38BDF8&center=true&vCenter=true&width=620&lines=Full-stack+builder+%2F+systems+explorer;Go+%C2%B7+TypeScript+%C2%B7+Python+%C2%B7+C%2B%2B;Turning+ideas+into+production-shaped+projects" alt="Typing introduction" /></a>
 </p>
 
