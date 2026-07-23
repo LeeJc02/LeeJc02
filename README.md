@@ -1,5 +1,14 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;vCenter=true&amp;width=435&amp;lines=Hey%F0%9F%91%8B%2C+I%27m+Lee.;A+Computer+Science+Student.;An+Open+Source+Builder.)](https://git.io/typing-svg)
 
+### 👋 About Me
+
+Hi! I'm LeeJc02, a Computer Science student. Here's the quick version:
+
+- I keep a close eye on AI and agent development, and I'm happily hooked on vibe coding.
+- I'm a terminal-obsessed minimalist.
+- I'm a full-stack indie developer. Got something that needs building? I might just be your person.
+- Bitter melon is the worst food on Earth. I will not be taking questions.
+
 ### 📫 Contact
 
 - Website: [leejc02.github.io](https://leejc02.github.io/)
