@@ -2,7 +2,7 @@
 
 ### 👋 About Me
 
-Hi! I'm LeeJc02, a Computer Science student. Here's the quick version:
+Hi! I'm LeeJc02, a CS student from China. Here's the quick version:
 
 - I keep a close eye on AI and agent development, and I'm happily hooked on vibe coding.
 - I'm a terminal-obsessed minimalist.
@@ -13,14 +13,7 @@ Hi! I'm LeeJc02, a Computer Science student. Here's the quick version:
 
 - Website: [leejc02.github.io](https://leejc02.github.io/)
 - GitHub: [@LeeJc02](https://github.com/LeeJc02)
-
-### 💻 Portfolio
-
-- 🩺 [MedOrbit](https://github.com/LeeJc02/MedOrbit)<br />Medication-safety workflows with evidence checks and auditable replay.
-
-- 💬 [WeHi](https://github.com/LeeJc02/WeHi)<br />Distributed realtime messaging with incremental multi-device synchronization.
-
-- 🧭 [More Projects](https://github.com/LeeJc02?tab=repositories)<br />Experiments across agent systems, distributed services, and the modern web.
+- E-mail: warpathbeewufl32@gmail.com
 
 ### 📊 GitHub Stats
 
